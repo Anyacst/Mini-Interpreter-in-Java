@@ -77,16 +77,16 @@ public class Lexer {
 
       if(currentChar == '(') {
         advance();
-        return new Token(TokenType.DIVIDE, "LPAREN");
+        return new Token(TokenType.LPAREN, "(");
       }
       
       if(currentChar == ')') {
         advance();
-        return new Token(TokenType.DIVIDE, "RPAREN");
+        return new Token(TokenType.RPAREN, ")");
       }
       if(currentChar == '^') {
         advance();
-        return new Token(TokenType.POWER, "POWER");
+        return new Token(TokenType.POWER, "^");
       }
 
       throw new RuntimeException("Invalid Token...");

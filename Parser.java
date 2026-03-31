@@ -52,7 +52,7 @@ public class Parser {
       } else {
         eat(TokenType.MULTIPLY);
       }
-      node = new BinOp(node, token, factor());
+      node = new BinOp(node, token, power());
     }
 
     return node;
